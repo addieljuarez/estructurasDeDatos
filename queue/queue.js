@@ -19,7 +19,8 @@ class Queue{
     }
 
     empty(){
-        return this.dataStore = [];
+        this.dataStore = [];
+        return this.dataStore;
     }
 
     print(){
