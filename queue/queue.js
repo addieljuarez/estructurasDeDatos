@@ -3,12 +3,7 @@ class Queue{
 
     constructor(){
         this.dataStore = Array.prototype.slice.call(arguments, 0);
-        // this.enqueue = enqueue;
-        // this.dequeue = dequeue;
-        // this.empty = empty;
-        // this.print = print;
     }
-
     
 
     enqueue(element){
@@ -21,7 +16,6 @@ class Queue{
         const elementDelete = this.dataStore.shift();
         console.log('Delete: ' + elementDelete);
         console.log('New Array: ' + JSON.stringify(this.dataStore));
-        // return 
     }
 
     empty(){

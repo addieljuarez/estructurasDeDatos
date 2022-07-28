@@ -1,10 +1,4 @@
-
-
-
 class LinearSearch {
-    constuctor(){
-        
-    }
 
     linear(arrayDemo, element){
         const arrayReturn = [];

@@ -6,7 +6,6 @@ const Binary = require('./binarySearch');
 const binary = new Binary()
 
 
-// const arrayDemo = [57, 53, 21, 37, 17, 36, 22, 3, 44, 97, 89, 26, 31, 47, 8, 17];
 const arrayDemo = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
 const element = 67;
 let before, took;
@@ -25,8 +24,6 @@ if(linearSearch == -1){
 took = process.hrtime(before);
 console.log('linear search took: ' + took);
 console.log('===============================');
-
-
 
 
 console.log('===============================');

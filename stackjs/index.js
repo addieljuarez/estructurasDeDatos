@@ -1,7 +1,5 @@
 const Stack = require('./stack');
 const assert = require('assert').strict;
-
-
 const stack = new Stack();
 
 
@@ -15,10 +13,8 @@ console.log(stack.length());
 assert.deepEqual(stack.length(), 0);
 
 
-
 console.log('Pop from the empty stack');
 console.log(stack.pop()); 
-// assert.deepEqual(stack.pop(), 'Underflow');
 
 
 
@@ -35,15 +31,12 @@ console.log(stack.printStack());
 
 
 console.log('Pop the last memory slot from the stack');
-var memorySlot = stack.pop();
-
+let memorySlot = stack.pop();
 
 console.log(memorySlot);
 assert.deepEqual(memorySlot, '0x0002');
 
-
 console.log('stack length:'+stack.length());
 assert.deepEqual(stack.length(), 2);
-
 
 console.log(stack.printStack()); 
