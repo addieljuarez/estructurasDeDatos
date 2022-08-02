@@ -1,5 +1,6 @@
 // Insertion Sort
-
+// La ordenación por inserción funciona comparando un elemento con los elementos a su izquierda, 
+// hasta que llega a un elemento que es más pequeño que él; a continuación, el elemento se inserta delante del elemento más pequeño.
 class Insertion{
 
     insertion(arrayDemo){
