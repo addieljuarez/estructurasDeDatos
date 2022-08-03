@@ -11,11 +11,13 @@ const selSort = new SelSort();
 const BuSort = require('./Exchange/BubbleSort');
 const buSort = new BuSort();
 
+const MerSort = require('./MergeSort/MergeSort');
+const merSort = new MerSort();
+
 let before, took;
 
 const arrayDemo = [6, 2, 44, 76, 543, 75, 23, 55, 13, 77, 88, 983, 63, 998, 546, 738, 746, 82, 73, 1, 3, 6, 1, 2, 999, 232, 5]
 
-// const arrayDemo = [5, 2, 4, 6, 1, 3];
 
 
 console.debug('===================================================');
@@ -63,4 +65,20 @@ before = process.hrtime();
 const bubbleSort = buSort.sort(arrayDemo);
 took = process.hrtime(before);
 console.debug(bubbleSort);
-console.debug('Buuble Sort took: ' + took);
+console.debug('Bubble Sort took: ' + took);
+
+
+
+
+
+
+
+console.debug('===================================================');
+console.debug('Bubble Sort');
+console.debug('===================================================');
+
+before = process.hrtime();
+const mergeSort = merSort.sort(arrayDemo);
+took = process.hrtime(before);
+console.debug(mergeSort);
+console.debug('Merge Sort took: ' + took);
